@@ -8,10 +8,10 @@ export const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-2xl font-bold text-solar-dark mb-6 flex items-center gap-2">
               <div className="w-6 h-6 rounded bg-gradient-to-tr from-solar-yellow to-solar-orange"></div>
-              LichtBank
+              LichtPakt
             </h3>
             <p className="text-solar-dark/60 max-w-sm mb-6">
-              Wir bringen intelligente Solarenergie auf die Dächer Wiens. Höchste Qualität, transparente Preise und lokale Expertise.
+              KI-geplante Solaranlagen mit intelligenten Komponenten. Persönlich betreut von echten Wiener Experten. Lebenslanger Service.
             </p>
             <div className="flex gap-4">
                {/* Social placeholders */}
@@ -55,7 +55,7 @@ export const Footer = () => {
         </div>
         
         <div className="text-center text-solar-dark/30 text-sm border-t border-solar-grey/10 pt-8">
-          &copy; {new Date().getFullYear()} LichtBank GmbH. Alle Rechte vorbehalten.
+          &copy; {new Date().getFullYear()} LichtPakt GmbH. Alle Rechte vorbehalten.
         </div>
       </div>
     </footer>

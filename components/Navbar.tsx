@@ -19,7 +19,7 @@ export const Navbar = () => {
         {/* Logo */}
         <div className="text-2xl font-bold tracking-tight text-solar-dark cursor-pointer flex items-center gap-2">
           <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-solar-yellow to-solar-orange"></div>
-          LichtBank
+          LichtPakt
         </div>
 
         {/* Desktop Links */}

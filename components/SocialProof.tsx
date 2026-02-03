@@ -1,11 +1,11 @@
 import React from 'react';
 import { Star } from 'lucide-react';
 
-const ReviewCard = ({ name, location, text, savings }: { name: string, location: string, text: string, savings: string }) => (
+const ReviewCard = ({ name, location, text, savings, stars = 5 }: { name: string, location: string, text: string, savings: string, stars?: number }) => (
   <div className="bg-[#F5F5F7] p-8 rounded-3xl relative">
     <div className="flex gap-1 mb-4">
       {[...Array(5)].map((_, i) => (
-        <Star key={i} className="w-4 h-4 text-solar-yellow fill-solar-yellow" />
+        <Star key={i} className={`w-4 h-4 ${i < stars ? 'text-solar-yellow fill-solar-yellow' : 'text-gray-300'}`} />
       ))}
     </div>
     <p className="text-solar-dark/80 italic mb-6 leading-relaxed">"{text}"</p>
@@ -32,22 +32,23 @@ export const SocialProof = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
-          <ReviewCard 
-            name="Thomas Huber" 
-            location="1190 Wien" 
-            text="Die Beratung war extrem transparent. Keine leeren Versprechungen. Die Monteure waren pünktlich und haben den Arbeitsplatz sauber hinterlassen."
-            savings="- € 2.100 / Jahr"
+          <ReviewCard
+            name="Thomas Huber"
+            location="1190 Wien"
+            text="Die KI-Planung hat mich überzeugt. Das Team hat mir am 3D-Modell genau gezeigt, warum welches Modul wo sitzt. Nach 8 Monaten kann ich sagen: Die Prognose war sogar konservativ."
+            savings="- € 2.340 / Jahr"
           />
-          <ReviewCard 
-            name="Familie Schneider" 
-            location="Klosterneuburg" 
-            text="Endlich unabhängig! Die App zeigt genau, was wir produzieren. Seit März haben wir fast keinen Strom mehr zugekauft."
+          <ReviewCard
+            name="Familie Schneider"
+            location="Klosterneuburg"
+            text="Ehrlich gesagt hat die Installation einen Tag länger gedauert als geplant, weil unser Dach komplizierter war. Aber das Ergebnis? Seit Mai haben wir keinen Strom mehr zugekauft. Die App zeigt alles in Echtzeit."
             savings="95% Autarkie"
+            stars={4}
           />
-          <ReviewCard 
-            name="Markus Berger" 
-            location="1220 Wien" 
-            text="Die Abwicklung der Förderung war mein größtes Bedenken, aber das Team hat alles übernommen. Das Geld war schneller da als gedacht."
+          <ReviewCard
+            name="Markus Berger"
+            location="1220 Wien"
+            text="Die Beratung war wirklich persönlich. Herr Novak hat sich 2 Stunden Zeit genommen und alle Optionen durchgerechnet. Die Förderabwicklung lief dann komplett ohne mein Zutun."
             savings="Förderung erhalten"
           />
         </div>

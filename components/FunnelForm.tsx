@@ -63,18 +63,18 @@ export const FunnelForm = () => {
             
             <div className="space-y-8">
               <div>
-                <h2 className="text-3xl md:text-5xl font-bold mb-6">Ihr Angebot in <br/><span className="text-solar-yellow">2 Minuten.</span></h2>
+                <h2 className="text-3xl md:text-5xl font-bold mb-6">Ihre KI-Analyse in <br/><span className="text-solar-yellow">2 Minuten.</span></h2>
                 <p className="text-white/60 text-lg leading-relaxed">
-                  Füllen Sie das Formular aus und erhalten Sie eine unverbindliche Ertragsprognose und Kostenschätzung für Ihr Dach.
+                  Erfahren Sie kostenlos, wie viel Ihr Dach produzieren kann. Unsere KI berechnet Ertrag, Förderung und Amortisation individuell für Ihre Situation.
                 </p>
               </div>
 
               <div className="space-y-6">
                 {[
-                  "Kostenlose 3D-Dachanalyse",
-                  "Individuelle Wirtschaftlichkeitsberechnung",
-                  "Prüfung aller aktuellen Förderungen",
-                  "Festpreisgarantie nach Besichtigung"
+                  "KI-gestützte 3D-Dachanalyse",
+                  "Persönliche Wirtschaftlichkeitsberechnung",
+                  "Prüfung aller Wien-Förderungen 2026",
+                  "Festpreisgarantie nach Vor-Ort-Besuch"
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-4">
                     <CheckCircle2 className="w-6 h-6 text-solar-yellow flex-shrink-0" />
@@ -204,7 +204,7 @@ export const FunnelForm = () => {
                         <Loader2 className="w-5 h-5 animate-spin" /> Wird gesendet...
                       </>
                     ) : (
-                      "Kostenlos berechnen"
+                      "Jetzt kostenlos analysieren"
                     )}
                   </Button>
                   

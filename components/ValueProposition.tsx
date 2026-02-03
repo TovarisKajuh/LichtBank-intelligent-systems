@@ -97,11 +97,11 @@ export const ValueProposition = () => {
             description="Wien fördert wie nie zuvor. Wir holen für Sie bis zu 30% der Investitionssumme zurück und kümmern uns um den gesamten Papierkram mit der Stadt."
             stat="€ 0,- Umsatzsteuer"
           />
-          <ValueCard 
+          <ValueCard
             icon={Zap}
-            title="Smarte Autarkie"
-            description="Unsere KI-gesteuerten Systeme lernen Ihren Verbrauch. Sie speichern Sonnenstrom für die Nacht und machen Sie bis zu 90% unabhängig vom Netzversorger."
-            stat="90% weniger Kosten"
+            title="Selbstlernendes System"
+            description="Intelligente Wechselrichter, Smart Meter und Speicher bilden ein vernetztes System. Es lernt Ihre Gewohnheiten und optimiert den Energiefluss automatisch, sodass Sie bis zu 90% autark werden."
+            stat="90% weniger Netzstrom"
           />
           <ValueCard 
             icon={Home}

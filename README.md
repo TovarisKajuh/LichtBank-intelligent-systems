@@ -1,6 +1,6 @@
-# LichtBank - Intelligent Solar Energy Systems
+# LichtPakt - Intelligent Solar Energy Systems
 
-A modern, high-conversion landing page for LichtBank, a solar energy company serving Vienna and the surrounding region. Built with React, TypeScript, and Tailwind CSS.
+A modern, high-conversion landing page for LichtPakt, a solar energy company serving Vienna and the surrounding region. Built with React, TypeScript, and Tailwind CSS.
 
 ## Features
 
@@ -28,8 +28,8 @@ A modern, high-conversion landing page for LichtBank, a solar energy company ser
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/TovarisKajuh/LichtBank-intelligent-systems.git
-   cd LichtBank-intelligent-systems
+   git clone https://github.com/TovarisKajuh/LichtPakt-intelligent-systems.git
+   cd LichtPakt-intelligent-systems
    ```
 
 2. Install dependencies:

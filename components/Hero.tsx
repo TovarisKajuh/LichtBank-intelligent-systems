@@ -122,25 +122,25 @@ export const Hero = () => {
                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-solar-orange opacity-75"></span>
                <span className="relative inline-flex rounded-full h-2 w-2 bg-solar-orange"></span>
              </span>
-            <span className="tracking-wide">Wien Förderung 2026 aktiv</span>
+            <span className="tracking-wide">Wien Förderung 2026 - Nur noch begrenzt verfügbar</span>
           </div>
 
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-balance leading-[1.05] text-solar-dark">
-            Wien 2026: Sichern Sie sich <br/>
+            2026: Ihr letztes Jahr mit hohen Stromrechnungen?<br/>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-solar-orange to-solar-yellow">
-              2.800€ Ersparnis pro Jahr.
+              Sparen Sie 2.800€ pro Jahr.
             </span>
           </h1>
 
           <div className="space-y-6 max-w-xl mx-auto lg:mx-0">
             <p className="text-lg text-zinc-500 leading-relaxed font-light">
-              Schluss mit Stromrechnungen. Unsere <strong className="text-solar-dark font-medium">KI-Photovoltaik</strong> managt Energie intelligent und profitabel. Erfahren Sie, warum 850+ Wiener Hausbesitzer diesen Weg gehen.
+              Schluss mit Stromrechnungen. Unsere <strong className="text-solar-dark font-medium">KI-geplanten Systeme</strong> mit intelligenten Wechselrichtern, Speichern und Wallboxen optimieren Ihren Ertrag automatisch. <span className="text-solar-dark/70">Persönlich betreut von echten Experten aus Wien.</span>
             </p>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
             <Button variant="primary" withArrow onClick={() => document.getElementById('funnel')?.scrollIntoView({ behavior: 'smooth' })} className="shadow-2xl shadow-solar-orange/20">
-              Kostenloses Angebot sichern
+              Jetzt Gratis-Analyse sichern
             </Button>
             <Button variant="outline" className="border-zinc-200 hover:bg-zinc-50">
               Ersparnis berechnen

@@ -27,25 +27,25 @@ export const Features = () => {
 
           <div className="order-1 lg:order-2 space-y-12">
             <div>
-              <h2 className="text-4xl font-bold text-solar-dark mb-6">Technologie, die mitdenkt.</h2>
+              <h2 className="text-4xl font-bold text-solar-dark mb-6">Intelligente Planung. Persönliche Betreuung.</h2>
               <p className="text-lg text-solar-dark/60 leading-relaxed">
-                Wir installieren keine Standard-Lösungen. Unsere <strong className="text-solar-dark">fortschrittlichen KI-Systeme</strong> analysieren Ihren Verbrauch in Echtzeit und optimieren den Energiefluss intelligent zwischen Dach, Speicher und Netz, um Ihren Profit vollautomatisch zu maximieren.
+                Wir kombinieren <strong className="text-solar-dark">KI-gestützte 3D-Planung</strong> mit echter menschlicher Expertise. Smarte Wechselrichter, intelligente Speicher und vernetzte Wallboxen bilden ein selbstlernendes System, das Ihren Ertrag maximiert. <strong className="text-solar-dark">Ihr persönlicher Ansprechpartner</strong> begleitet Sie dabei von der Beratung bis zur lebenslangen Wartung.
               </p>
             </div>
 
             <div className="space-y-8">
               {[
                 {
-                  title: "1. KI-Analyse & Design",
-                  text: "Wir erstellen ein 3D-Modell Ihres Hauses und berechnen mittels künstlicher Intelligenz den optimalen Ertrag basierend auf lokalen Wetterdaten."
+                  title: "1. KI-gestützte 3D-Planung",
+                  text: "Wir erstellen ein präzises 3D-Modell Ihres Daches. Unsere KI berechnet basierend auf Wetterdaten, Verschattung und Ihrem Verbrauchsprofil die optimale Modulanordnung, Speichergröße und Wallbox-Position."
                 },
                 {
-                  title: "2. Premium Komponenten",
-                  text: "Wir verbauen ausschließlich Glas-Glas Module und smarte Wechselrichter von Marktführern, die perfekt mit unserer Software kommunizieren."
+                  title: "2. Intelligente Komponenten",
+                  text: "Smarte Wechselrichter mit integrierten Energiemetern, lernfähige Batteriespeicher und vernetzte Ladestationen kommunizieren in Echtzeit, um Produktion, Verbrauch und Speicherung automatisch zu optimieren."
                 },
                 {
-                  title: "3. Installation in 2 Tagen",
-                  text: "Unsere eigenen Montageteams arbeiten schnell, sauber und respektieren Ihr Eigentum. Kein Subunternehmer-Chaos."
+                  title: "3. Persönliche Betreuung",
+                  text: "Ihr persönlicher Projektleiter besucht Sie vor Ort, beantwortet alle Fragen und bleibt auch nach der Installation Ihr Ansprechpartner. Echte Menschen, lebenslanger Service."
                 }
               ].map((item, i) => (
                 <div key={i} className="flex gap-6 group cursor-default">
