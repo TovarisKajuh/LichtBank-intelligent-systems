@@ -24,9 +24,22 @@ export const Navbar = () => {
 
         {/* Desktop Links */}
         <div className="hidden md:flex items-center gap-8">
-          {['Vorteile', 'Ablauf', 'Referenzen', 'Förderung'].map((item) => (
-            <a key={item} href="#" className="text-sm font-medium text-solar-dark/70 hover:text-solar-dark transition-colors">
-              {item}
+          {[
+            { label: 'Vorteile', href: '#vorteile' },
+            { label: 'Ablauf', href: '#ablauf' },
+            { label: 'Referenzen', href: '#referenzen' },
+            { label: 'Förderung', href: '#foerderung' }
+          ].map((item) => (
+            <a
+              key={item.label}
+              href={item.href}
+              onClick={(e) => {
+                e.preventDefault();
+                document.querySelector(item.href)?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="text-sm font-medium text-solar-dark/70 hover:text-solar-dark transition-colors"
+            >
+              {item.label}
             </a>
           ))}
         </div>
@@ -46,9 +59,23 @@ export const Navbar = () => {
       {mobileMenuOpen && (
         <div className="absolute top-full left-0 right-0 bg-white border-b border-solar-grey/10 p-6 md:hidden shadow-xl animate-in slide-in-from-top-4">
           <div className="flex flex-col gap-4">
-            {['Vorteile', 'Ablauf', 'Referenzen', 'Förderung'].map((item) => (
-              <a key={item} href="#" className="text-lg font-medium text-solar-dark" onClick={() => setMobileMenuOpen(false)}>
-                {item}
+            {[
+              { label: 'Vorteile', href: '#vorteile' },
+              { label: 'Ablauf', href: '#ablauf' },
+              { label: 'Referenzen', href: '#referenzen' },
+              { label: 'Förderung', href: '#foerderung' }
+            ].map((item) => (
+              <a
+                key={item.label}
+                href={item.href}
+                className="text-lg font-medium text-solar-dark"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setMobileMenuOpen(false);
+                  document.querySelector(item.href)?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
+                {item.label}
               </a>
             ))}
             <Button variant="primary" fullWidth className="mt-4" onClick={() => setMobileMenuOpen(false)}>
