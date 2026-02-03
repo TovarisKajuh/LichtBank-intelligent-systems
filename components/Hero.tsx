@@ -4,9 +4,9 @@ import { ShieldCheck, TrendingUp, Sun, Zap, Battery, ArrowDown } from 'lucide-re
 
 const DashboardMockup = () => {
   return (
-    <div className="relative w-full max-w-2xl mx-auto perspective-1000 animate-float">
+    <div className="relative w-full max-w-2xl mx-auto lg:perspective-1000 lg:animate-float">
       {/* Dark Glass Card for Contrast - Refined "Apple Dark Mode" look */}
-      <div className="relative z-10 bg-[#0A0A0A] rounded-[2rem] p-6 md:p-8 shadow-2xl shadow-black/20 border border-white/10 overflow-hidden transform rotate-x-6 rotate-y-6 transition-transform duration-500 hover:rotate-0 ring-1 ring-white/10">
+      <div className="relative z-10 bg-[#0A0A0A] rounded-[1.5rem] sm:rounded-[2rem] p-4 sm:p-6 md:p-8 shadow-2xl shadow-black/20 border border-white/10 overflow-hidden lg:transform lg:rotate-x-6 lg:rotate-y-6 transition-transform duration-500 lg:hover:rotate-0 ring-1 ring-white/10">
         
         {/* Subtle internal glow */}
         <div className="absolute top-0 right-0 w-80 h-80 bg-solar-orange/10 blur-[100px] rounded-full pointer-events-none" />
@@ -117,15 +117,15 @@ export const Hero = () => {
         {/* Text Content */}
         <div className={`space-y-8 text-center lg:text-left transition-all duration-1000 ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-solar-yellow/10 border border-solar-yellow/20 text-sm font-semibold text-solar-dark mb-4 animate-in fade-in slide-in-from-bottom-4 duration-700">
-            <span className="relative flex h-2 w-2">
+          <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-solar-yellow/10 border border-solar-yellow/20 text-xs sm:text-sm font-semibold text-solar-dark mb-4 animate-in fade-in slide-in-from-bottom-4 duration-700">
+            <span className="relative flex h-2 w-2 flex-shrink-0">
                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-solar-orange opacity-75"></span>
                <span className="relative inline-flex rounded-full h-2 w-2 bg-solar-orange"></span>
              </span>
-            <span className="tracking-wide">Wien Förderung 2026 - Nur noch begrenzt verfügbar</span>
+            <span className="tracking-wide">Wien Förderung 2026</span>
           </div>
 
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-balance leading-[1.05] text-solar-dark">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight text-balance leading-[1.1] text-solar-dark">
             2026: Ihr letztes Jahr mit hohen Stromrechnungen?<br/>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-solar-orange to-solar-yellow">
               Sparen Sie 2.800€ pro Jahr.
@@ -162,11 +162,11 @@ export const Hero = () => {
         </div>
 
         {/* Visual Content */}
-        <div className={`transition-all duration-1000 delay-300 ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}`}>
+        <div className={`relative overflow-hidden transition-all duration-1000 delay-300 ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}`}>
            <DashboardMockup />
-           
+
            {/* Decorative blurred element behind mockup */}
-           <div className="absolute -inset-10 bg-gradient-to-tr from-solar-yellow to-solar-orange opacity-20 blur-3xl -z-10 rounded-full animate-pulse-slow"></div>
+           <div className="absolute inset-0 bg-gradient-to-tr from-solar-yellow to-solar-orange opacity-20 blur-3xl -z-10 rounded-full animate-pulse-slow"></div>
         </div>
 
       </div>
