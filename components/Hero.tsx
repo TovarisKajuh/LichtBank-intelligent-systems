@@ -5,7 +5,7 @@ import { ShieldCheck, TrendingUp, Sun, Zap, Battery, ArrowDown, X } from 'lucide
 
 const DashboardMockup = () => {
   return (
-    <div className="relative w-full max-w-2xl mx-auto lg:perspective-1000">
+    <div className="relative w-full max-w-full lg:max-w-2xl mx-auto lg:perspective-1000">
       {/* Float wrapper - no clipping */}
       <div className="lg:animate-float">
         {/* Card - keeps overflow-hidden for internal glow only */}
@@ -169,10 +169,10 @@ export const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-tr from-solar-yellow/20 to-solar-orange/25 blur-[120px] rounded-full animate-pulse-slow"></div>
       </div>
 
-      <div className="relative z-20 container mx-auto grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div className="relative z-20 container mx-auto grid lg:grid-cols-2 gap-12 lg:gap-20 items-center overflow-hidden">
 
         {/* Text Content */}
-        <div className={`space-y-8 text-center lg:text-left transition-all duration-1000 ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+        <div className={`space-y-8 text-center lg:text-left max-w-full overflow-hidden transition-all duration-1000 ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
 
           <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-solar-yellow/10 border border-solar-yellow/20 text-xs sm:text-sm font-semibold text-solar-dark mb-4 animate-in fade-in slide-in-from-bottom-4 duration-700">
             <span className="relative flex h-2 w-2 flex-shrink-0">
@@ -223,7 +223,7 @@ export const Hero = () => {
         </div>
 
         {/* Visual Content */}
-        <div className={`relative transition-all duration-1000 delay-300 ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}`}>
+        <div className={`relative overflow-hidden lg:overflow-visible transition-all duration-1000 delay-300 ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}`}>
            <DashboardMockup />
         </div>
 
