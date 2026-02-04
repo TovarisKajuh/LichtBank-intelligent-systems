@@ -1,5 +1,5 @@
 import React from 'react';
-import { Star, MapPin, Zap, Battery, Image } from 'lucide-react';
+import { Star, MapPin, Zap, Battery } from 'lucide-react';
 
 const stats = [
   { value: "500+", label: "Anlagen installiert" },
@@ -12,17 +12,20 @@ const projects = [
   {
     location: "1190 Wien, Döbling",
     specs: "9.8 kWp + 10 kWh Speicher",
-    year: "2025"
+    year: "2025",
+    image: "/projects/project-1.jpeg"
   },
   {
     location: "1220 Wien, Donaustadt",
     specs: "12.5 kWp + Wallbox",
-    year: "2025"
+    year: "2025",
+    image: "/projects/project-2.jpeg"
   },
   {
     location: "Klosterneuburg",
     specs: "15 kWp + 15 kWh Speicher",
-    year: "2024"
+    year: "2024",
+    image: "/projects/project-4.jpeg"
   }
 ];
 
@@ -96,11 +99,12 @@ export const Referenzen = () => {
           <div className="grid md:grid-cols-3 gap-6">
             {projects.map((project, i) => (
               <div key={i} className="group relative rounded-2xl overflow-hidden bg-zinc-200 aspect-video cursor-pointer">
-                {/* Placeholder for project photo */}
-                <div className="absolute inset-0 flex flex-col items-center justify-center text-zinc-400">
-                  <Image className="w-12 h-12 mb-2 opacity-50" />
-                  <span className="text-sm">Projekt {i + 1} - Foto hier einfügen</span>
-                </div>
+                {/* Project photo */}
+                <img
+                  src={project.image}
+                  alt={`Solar installation in ${project.location}`}
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
 
                 {/* Hover Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-solar-dark/90 via-solar-dark/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
