@@ -147,7 +147,7 @@ export const Hero = () => {
   const savings = calculateSavings(consumption, roofSize);
 
   return (
-    <section className="relative min-h-screen pt-32 pb-20 px-6 flex flex-col items-center justify-center bg-white">
+    <section className="relative min-h-screen pt-32 pb-20 px-6 flex flex-col items-center justify-center overflow-hidden bg-white">
 
       {/* Background - The "Beautiful Apple Light" */}
       <div className="absolute inset-0 pointer-events-none">
@@ -164,116 +164,15 @@ export const Hero = () => {
         <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white via-white/80 to-transparent" />
       </div>
 
-      {/* MOBILE HERO GRAPHIC: Dynamic Light Beams - Behind text layer */}
-      <div className="absolute inset-0 pointer-events-none lg:hidden z-10">
-        {/* Primary diagonal beam - warm orange */}
-        <div
-          className="absolute w-[200%] h-[180px] -rotate-[25deg] animate-pulse-slow"
-          style={{
-            top: '35%',
-            left: '-30%',
-            background: 'linear-gradient(180deg, transparent 0%, rgba(255,176,41,0.15) 30%, rgba(254,200,0,0.25) 50%, rgba(255,176,41,0.15) 70%, transparent 100%)',
-            filter: 'blur(30px)',
-          }}
-        />
-        {/* Secondary beam - subtle yellow */}
-        <div
-          className="absolute w-[200%] h-[100px] -rotate-[25deg]"
-          style={{
-            top: '28%',
-            left: '-40%',
-            background: 'linear-gradient(180deg, transparent 0%, rgba(254,200,0,0.1) 50%, transparent 100%)',
-            filter: 'blur(40px)',
-          }}
-        />
-        {/* Accent beam - narrower, more vivid */}
-        <div
-          className="absolute w-[200%] h-[60px] -rotate-[25deg]"
-          style={{
-            top: '50%',
-            left: '-20%',
-            background: 'linear-gradient(180deg, transparent 0%, rgba(255,176,41,0.2) 50%, transparent 100%)',
-            filter: 'blur(20px)',
-          }}
-        />
-        {/* Sun source orb - top right */}
-        <div
-          className="absolute w-[300px] h-[300px] rounded-full animate-pulse-slow"
-          style={{
-            top: '5%',
-            right: '-10%',
-            background: 'radial-gradient(circle, rgba(254,200,0,0.4) 0%, rgba(255,176,41,0.2) 40%, transparent 70%)',
-            filter: 'blur(40px)',
-          }}
-        />
-      </div>
-
       {/* Ambient Glow - positioned outside any clipping container */}
       <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[600px] h-[600px] lg:w-[800px] lg:h-[800px] pointer-events-none z-10 hidden lg:block">
         <div className="absolute inset-0 bg-gradient-to-tr from-solar-yellow/20 to-solar-orange/25 blur-[120px] rounded-full animate-pulse-slow"></div>
       </div>
 
-      {/* MOBILE HERO GRAPHIC: Foreground Light Beams - In front of text layer */}
-      <div className="absolute inset-0 pointer-events-none lg:hidden z-30">
-        {/* Sharp cutting beam - appears to slice through */}
-        <div
-          className="absolute w-[200%] h-[8px] -rotate-[25deg]"
-          style={{
-            top: '42%',
-            left: '-30%',
-            background: 'linear-gradient(90deg, transparent 0%, rgba(255,176,41,0.6) 20%, rgba(254,200,0,0.8) 50%, rgba(255,176,41,0.6) 80%, transparent 100%)',
-            boxShadow: '0 0 30px rgba(254,200,0,0.5), 0 0 60px rgba(255,176,41,0.3)',
-          }}
-        />
-        {/* Secondary cutting beam */}
-        <div
-          className="absolute w-[200%] h-[4px] -rotate-[25deg]"
-          style={{
-            top: '48%',
-            left: '-35%',
-            background: 'linear-gradient(90deg, transparent 0%, rgba(254,200,0,0.4) 30%, rgba(255,176,41,0.5) 50%, rgba(254,200,0,0.4) 70%, transparent 100%)',
-            boxShadow: '0 0 20px rgba(254,200,0,0.3)',
-          }}
-        />
-        {/* Floating particles/orbs */}
-        <div
-          className="absolute w-4 h-4 rounded-full animate-bounce"
-          style={{
-            top: '38%',
-            right: '15%',
-            background: 'radial-gradient(circle, rgba(254,200,0,0.9) 0%, rgba(255,176,41,0.5) 50%, transparent 70%)',
-            boxShadow: '0 0 20px rgba(254,200,0,0.8)',
-            animationDuration: '3s',
-          }}
-        />
-        <div
-          className="absolute w-3 h-3 rounded-full animate-bounce"
-          style={{
-            top: '52%',
-            left: '20%',
-            background: 'radial-gradient(circle, rgba(255,176,41,0.8) 0%, rgba(254,200,0,0.4) 50%, transparent 70%)',
-            boxShadow: '0 0 15px rgba(255,176,41,0.6)',
-            animationDuration: '2.5s',
-            animationDelay: '0.5s',
-          }}
-        />
-        <div
-          className="absolute w-2 h-2 rounded-full animate-bounce"
-          style={{
-            top: '32%',
-            left: '35%',
-            background: 'radial-gradient(circle, rgba(254,200,0,0.7) 0%, transparent 70%)',
-            boxShadow: '0 0 10px rgba(254,200,0,0.5)',
-            animationDuration: '2s',
-            animationDelay: '1s',
-          }}
-        />
-      </div>
-
-      <div className="relative z-20 container mx-auto grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div className="relative z-20 container mx-auto grid lg:grid-cols-2 gap-12 lg:gap-20 items-center overflow-hidden">
 
         {/* Text Content */}
-        <div className={`space-y-8 text-center lg:text-left max-w-full transition-all duration-1000 ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+        <div className={`space-y-8 text-center lg:text-left max-w-full overflow-hidden transition-all duration-1000 ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
 
           <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-solar-yellow/10 border border-solar-yellow/20 text-xs sm:text-sm font-semibold text-solar-dark mb-4 animate-in fade-in slide-in-from-bottom-4 duration-700">
             <span className="relative flex h-2 w-2 flex-shrink-0">
