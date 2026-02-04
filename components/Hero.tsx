@@ -125,16 +125,18 @@ export const Hero = () => {
             <span className="tracking-wide">Wien Förderung 2026</span>
           </div>
 
-          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black tracking-tight leading-[0.95] text-solar-dark">
-            Null<br/>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-solar-orange via-solar-yellow to-solar-orange animate-gradient bg-[length:200%_auto]">
-              Stromrechnung.
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight text-balance leading-[1.1] text-solar-dark">
+            2026: Ihr letztes Jahr mit hohen Stromrechnungen?<br/>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-solar-orange to-solar-yellow">
+              Sparen Sie 2.800€ pro Jahr.
             </span>
           </h1>
 
-          <p className="text-lg md:text-xl text-zinc-400 font-medium max-w-md mx-auto lg:mx-0">
-            KI-geplante Solaranlagen. Persönlich betreut in Wien.
-          </p>
+          <div className="space-y-6 max-w-xl mx-auto lg:mx-0">
+            <p className="text-lg text-zinc-500 leading-relaxed font-light">
+              Schluss mit Stromrechnungen. Unsere <strong className="text-solar-dark font-medium">KI-geplanten Systeme</strong> mit intelligenten Wechselrichtern, Speichern und Wallboxen optimieren Ihren Ertrag automatisch. <span className="text-solar-dark/70">Persönlich betreut von echten Experten aus Wien.</span>
+            </p>
+          </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
             <Button variant="primary" withArrow onClick={() => document.getElementById('funnel')?.scrollIntoView({ behavior: 'smooth' })} className="shadow-2xl shadow-solar-orange/20">
