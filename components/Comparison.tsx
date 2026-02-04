@@ -35,10 +35,10 @@ export const Comparison = () => {
           <div className="relative bg-white/80 backdrop-blur-xl rounded-[1.4rem] p-2 border border-white/50">
              
              {/* Header */}
-             <div className="grid grid-cols-12 text-sm md:text-base border-b border-solar-grey/20 pb-6 pt-6 px-6">
-                <div className="col-span-6 md:col-span-6"></div>
-                <div className="col-span-3 md:col-span-3 text-center text-solar-orange font-extrabold tracking-wide text-lg drop-shadow-sm">LichtPakt</div>
-                <div className="col-span-3 md:col-span-3 text-center text-zinc-400 font-medium">Andere</div>
+             <div className="grid grid-cols-12 text-sm md:text-base border-b border-solar-grey/20 pb-6 pt-6 px-4 sm:px-6">
+                <div className="col-span-5 sm:col-span-6"></div>
+                <div className="col-span-4 sm:col-span-3 text-center text-solar-orange font-extrabold tracking-wide text-sm sm:text-lg drop-shadow-sm">LichtPakt</div>
+                <div className="col-span-3 sm:col-span-3 text-center text-zinc-400 font-medium text-sm sm:text-base">Andere</div>
              </div>
 
              {/* Rows */}
@@ -46,13 +46,13 @@ export const Comparison = () => {
                 {features.map((feature, i) => (
                   <div 
                     key={i} 
-                    className={`grid grid-cols-12 items-center py-5 px-6 transition-colors hover:bg-solar-yellow/5 ${i !== features.length - 1 ? 'border-b border-solar-grey/10' : ''}`}
+                    className={`grid grid-cols-12 items-center py-5 px-4 sm:px-6 transition-colors hover:bg-solar-yellow/5 ${i !== features.length - 1 ? 'border-b border-solar-grey/10' : ''}`}
                   >
-                    <div className="col-span-6 md:col-span-6 text-solar-dark font-medium pr-4">
+                    <div className="col-span-5 sm:col-span-6 text-solar-dark font-medium pr-2 sm:pr-4 text-sm sm:text-base">
                       {feature.name}
                     </div>
-                    
-                    <div className="col-span-3 md:col-span-3 flex justify-center">
+
+                    <div className="col-span-4 sm:col-span-3 flex justify-center">
                       {feature.us ? (
                         <div className="w-8 h-8 rounded-full bg-green-500/10 flex items-center justify-center shadow-sm">
                           <CheckCircle2 className="w-5 h-5 text-green-500" />
@@ -62,7 +62,7 @@ export const Comparison = () => {
                       )}
                     </div>
 
-                    <div className="col-span-3 md:col-span-3 flex justify-center">
+                    <div className="col-span-3 sm:col-span-3 flex justify-center">
                       {feature.others ? (
                         <div className="w-8 h-8 rounded-full bg-green-500/10 flex items-center justify-center shadow-sm">
                           <CheckCircle2 className="w-5 h-5 text-green-500" />
