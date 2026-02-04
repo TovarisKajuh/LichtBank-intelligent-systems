@@ -35,10 +35,10 @@ export const Comparison = () => {
           <div className="relative bg-white/80 backdrop-blur-xl rounded-[1.4rem] p-2 border border-white/50">
              
              {/* Header */}
-             <div className="grid grid-cols-12 text-sm md:text-base border-b border-solar-grey/20 pb-6 pt-6 px-6">
+             <div className="grid grid-cols-12 items-end text-sm md:text-base border-b border-solar-grey/20 pb-6 pt-6 px-6">
                 <div className="col-span-6 md:col-span-6"></div>
-                <div className="col-span-3 md:col-span-3 text-center text-solar-orange font-extrabold tracking-wide text-lg drop-shadow-sm">LichtPakt</div>
-                <div className="col-span-3 md:col-span-3 text-center text-zinc-400 font-medium">Andere</div>
+                <div className="col-span-3 md:col-span-3 text-center text-solar-orange font-extrabold tracking-wide text-sm md:text-lg drop-shadow-sm">LichtPakt</div>
+                <div className="col-span-3 md:col-span-3 text-center text-zinc-400 font-medium text-sm md:text-base">Andere</div>
              </div>
 
              {/* Rows */}

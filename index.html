@@ -37,7 +37,7 @@
       "description": "KI-geplante Photovoltaik-Anlagen für Wien und Niederösterreich. Intelligente Wechselrichter, Speicher und Wallboxen.",
       "url": "https://lichtpakt.at",
       "telephone": "+436604108890",
-      "email": "info@avesol.eu",
+      "email": "info@lichtpakt.at",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Wien",
@@ -136,6 +136,11 @@
 
       .text-balance {
         text-wrap: balance;
+      }
+
+      /* Hide ElevenLabs widget when modal is open */
+      body.modal-open elevenlabs-convai {
+        display: none !important;
       }
     </style>
   <script type="importmap">

@@ -1,6 +1,11 @@
 import React from 'react';
+import { LegalPage } from './LegalModals';
 
-export const Footer = () => {
+interface FooterProps {
+  onLegalPageClick: (page: LegalPage) => void;
+}
+
+export const Footer: React.FC<FooterProps> = ({ onLegalPageClick }) => {
   return (
     <footer className="bg-[#FAFAFA] pt-20 pb-10 px-6 border-t border-solar-grey/20">
       <div className="container mx-auto">
@@ -36,8 +41,8 @@ export const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="mailto:info@avesol.eu" className="hover:text-solar-orange transition-colors">
-                  info@avesol.eu
+                <a href="mailto:info@lichtpakt.at" className="hover:text-solar-orange transition-colors">
+                  info@lichtpakt.at
                 </a>
               </li>
             </ul>
@@ -46,10 +51,10 @@ export const Footer = () => {
           <div>
             <h4 className="font-bold text-solar-dark mb-4">Rechtliches</h4>
             <ul className="space-y-3 text-solar-dark/60">
-              <li><a href="#" className="hover:text-solar-orange transition-colors">Impressum</a></li>
-              <li><a href="#" className="hover:text-solar-orange transition-colors">Datenschutz</a></li>
-              <li><a href="#" className="hover:text-solar-orange transition-colors">AGB</a></li>
-              <li><a href="#" className="hover:text-solar-orange transition-colors">Cookie Einstellungen</a></li>
+              <li><button onClick={() => onLegalPageClick('impressum')} className="hover:text-solar-orange transition-colors">Impressum</button></li>
+              <li><button onClick={() => onLegalPageClick('datenschutz')} className="hover:text-solar-orange transition-colors">Datenschutz</button></li>
+              <li><button onClick={() => onLegalPageClick('agb')} className="hover:text-solar-orange transition-colors">AGB</button></li>
+              <li><button onClick={() => onLegalPageClick('cookies')} className="hover:text-solar-orange transition-colors">Cookie Einstellungen</button></li>
             </ul>
           </div>
         </div>

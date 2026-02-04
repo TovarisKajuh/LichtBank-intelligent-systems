@@ -38,7 +38,8 @@ const caseStudies = [
     before: "€280/Monat",
     after: "€25/Monat",
     savings: "- €2.340/Jahr",
-    stars: 5
+    stars: 5,
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
   },
   {
     name: "Familie Schneider",
@@ -48,7 +49,8 @@ const caseStudies = [
     before: "€320/Monat",
     after: "€15/Monat",
     savings: "95% Autarkie",
-    stars: 4
+    stars: 4,
+    image: "https://images.unsplash.com/photo-1581579438747-104c53d7fbc4?w=150&h=150&fit=crop&crop=face"
   },
   {
     name: "Markus Berger",
@@ -58,7 +60,8 @@ const caseStudies = [
     before: "Kompliziert",
     after: "Einfach",
     savings: "Förderung erhalten",
-    stars: 5
+    stars: 5,
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
   }
 ];
 
@@ -129,10 +132,12 @@ export const Referenzen = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {caseStudies.map((study, i) => (
               <div key={i} className="bg-white rounded-3xl p-8 shadow-lg border border-solar-grey/10 hover:shadow-xl transition-shadow">
-                {/* Photo Placeholder */}
-                <div className="w-16 h-16 rounded-full bg-zinc-200 flex items-center justify-center mb-6 mx-auto">
-                  <span className="text-zinc-400 text-xs text-center">Foto</span>
-                </div>
+                {/* Customer Photo */}
+                <img
+                  src={study.image}
+                  alt={study.name}
+                  className="w-16 h-16 rounded-full object-cover mb-6 mx-auto"
+                />
 
                 {/* Stars */}
                 <div className="flex gap-1 justify-center mb-4">

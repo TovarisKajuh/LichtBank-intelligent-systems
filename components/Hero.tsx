@@ -126,15 +126,18 @@ export const Hero = () => {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [calculatorOpen]);
 
-  // Prevent body scroll when modal is open
+  // Prevent body scroll when modal is open and hide ElevenLabs widget
   useEffect(() => {
     if (calculatorOpen) {
       document.body.style.overflow = 'hidden';
+      document.body.classList.add('modal-open');
     } else {
       document.body.style.overflow = '';
+      document.body.classList.remove('modal-open');
     }
     return () => {
       document.body.style.overflow = '';
+      document.body.classList.remove('modal-open');
     };
   }, [calculatorOpen]);
 
@@ -237,7 +240,7 @@ export const Hero = () => {
       {/* Calculator Modal */}
       {calculatorOpen && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-in fade-in duration-200"
+          className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-in fade-in duration-200"
           onClick={handleBackdropClick}
         >
           <div className="relative w-full max-w-lg bg-[#0A0A0A] rounded-[2rem] p-6 sm:p-8 shadow-2xl border border-white/10 animate-in zoom-in-95 duration-300">

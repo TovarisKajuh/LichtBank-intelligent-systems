@@ -34,11 +34,11 @@ export const FloatingCTA = () => {
   return (
     <button
       onClick={scrollToForm}
-      className={`fixed bottom-6 left-6 z-40 flex items-center gap-2 px-6 py-4 rounded-full bg-gradient-to-r from-solar-orange to-solar-yellow text-solar-dark font-bold shadow-lg shadow-solar-orange/30 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-solar-orange/40 ${
+      className={`fixed bottom-6 left-4 z-40 flex items-center gap-2 px-4 py-3 rounded-full bg-gradient-to-r from-solar-orange to-solar-yellow text-solar-dark font-bold shadow-lg shadow-solar-orange/30 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-solar-orange/40 ${
         visible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0 pointer-events-none'
       }`}
     >
-      <span>Jetzt Angebot sichern</span>
+      <span>Ihr Angebot</span>
       <ArrowRight className="w-5 h-5" />
     </button>
   );
