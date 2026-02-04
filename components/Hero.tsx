@@ -182,9 +182,9 @@ export const Hero = () => {
             <span className="tracking-wide">Wien Förderung 2026</span>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-balance leading-[1.05] text-solar-dark">
-            2026: Jahr ohne Stromrechnungen.<br className="hidden sm:block"/>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-solar-orange to-solar-yellow">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.05] text-solar-dark">
+            2026: Jahr ohne Stromrechnungen.
+            <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl mt-2 text-transparent bg-clip-text bg-gradient-to-r from-solar-orange to-solar-yellow">
               Sparen Sie 2.800€/Jahr.
             </span>
           </h1>
