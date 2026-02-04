@@ -106,7 +106,7 @@ export const Vorteile = () => {
   ];
 
   return (
-    <section id="vorteile" className="py-24 px-6 bg-[#FAFAFA] relative overflow-hidden">
+    <section id="vorteile" className="py-24 px-6 bg-[#FAFAFA] relative">
       {/* Background Decor */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-[radial-gradient(circle,rgba(255,176,41,0.03)_0%,rgba(0,0,0,0)_70%)] pointer-events-none"></div>
 

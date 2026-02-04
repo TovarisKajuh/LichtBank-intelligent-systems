@@ -50,7 +50,7 @@ export const Ablauf = () => {
   const [activeStep, setActiveStep] = useState<number | null>(null);
 
   return (
-    <section id="ablauf" className="py-24 px-6 bg-white overflow-hidden">
+    <section id="ablauf" className="py-24 px-6 bg-white relative">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-extrabold text-solar-dark mb-6">

@@ -48,7 +48,7 @@ const benefits = [
 
 export const Foerderung = () => {
   return (
-    <section id="foerderung" className="py-24 px-6 bg-white relative overflow-hidden">
+    <section id="foerderung" className="py-24 px-6 bg-white relative">
       {/* Background Accent */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-solar-yellow/5 rounded-full blur-[100px] pointer-events-none"></div>
 
