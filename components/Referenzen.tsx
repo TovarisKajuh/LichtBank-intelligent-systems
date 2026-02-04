@@ -39,7 +39,7 @@ const caseStudies = [
     after: "€25/Monat",
     savings: "- €2.340/Jahr",
     stars: 5,
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+    image: "/reviews/review-1.jpeg"
   },
   {
     name: "Familie Schneider",
@@ -50,7 +50,7 @@ const caseStudies = [
     after: "€15/Monat",
     savings: "95% Autarkie",
     stars: 4,
-    image: "https://images.unsplash.com/photo-1581579438747-104c53d7fbc4?w=150&h=150&fit=crop&crop=face"
+    image: "/reviews/review-2.jpeg"
   },
   {
     name: "Markus Berger",
@@ -61,7 +61,7 @@ const caseStudies = [
     after: "Einfach",
     savings: "Förderung erhalten",
     stars: 5,
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
+    image: "/reviews/review-3.jpeg"
   }
 ];
 

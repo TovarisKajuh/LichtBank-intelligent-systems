@@ -185,12 +185,16 @@ export const Hero = () => {
             <span className="tracking-wide">Wien Förderung 2026</span>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.05] text-solar-dark">
-            2026: Jahr ohne Stromrechnungen.
-            <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl mt-2 text-transparent bg-clip-text bg-gradient-to-r from-solar-orange to-solar-yellow">
-              Sparen Sie 2.800€/Jahr.
-            </span>
-          </h1>
+          <div className="relative">
+            {/* Mobile sunny hue behind headline */}
+            <div className="absolute -inset-x-8 -inset-y-4 bg-[radial-gradient(ellipse_at_center,rgba(255,176,41,0.15)_0%,rgba(254,200,0,0.08)_40%,transparent_70%)] blur-[40px] pointer-events-none lg:hidden" />
+            <h1 className="relative text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.05] text-solar-dark">
+              2026: Jahr ohne Stromrechnungen.
+              <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl mt-2 text-transparent bg-clip-text bg-gradient-to-r from-solar-orange to-solar-yellow">
+                Sparen Sie 2.800€/Jahr.
+              </span>
+            </h1>
+          </div>
 
           <div className="space-y-6 max-w-xl mx-auto lg:mx-0">
             <p className="text-lg text-zinc-500 leading-relaxed font-light">
