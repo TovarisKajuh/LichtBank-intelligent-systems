@@ -38,8 +38,7 @@ const caseStudies = [
     before: "€280/Monat",
     after: "€25/Monat",
     savings: "- €2.340/Jahr",
-    stars: 5,
-    image: "/reviews/review-1.jpeg"
+    stars: 5
   },
   {
     name: "Familie Schneider",
@@ -60,8 +59,7 @@ const caseStudies = [
     before: "Kompliziert",
     after: "Einfach",
     savings: "Förderung erhalten",
-    stars: 5,
-    image: "/reviews/review-3.jpeg"
+    stars: 5
   }
 ];
 
@@ -133,11 +131,13 @@ export const Referenzen = () => {
             {caseStudies.map((study, i) => (
               <div key={i} className="bg-white rounded-3xl p-8 shadow-lg border border-solar-grey/10 hover:shadow-xl transition-shadow">
                 {/* Customer Photo */}
-                <img
-                  src={study.image}
-                  alt={study.name}
-                  className="w-16 h-16 rounded-full object-cover mb-6 mx-auto"
-                />
+                {study.image && (
+                  <img
+                    src={study.image}
+                    alt={study.name}
+                    className="w-16 h-16 rounded-full object-cover mb-6 mx-auto"
+                  />
+                )}
 
                 {/* Stars */}
                 <div className="flex gap-1 justify-center mb-4">
